@@ -9,29 +9,11 @@ public class RemoveVowelsTest {
 
     @Before
     public void setUp() {
-        System.out.println("Before");
-
-
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
         removeVowels = null;
-
-    }
-
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("BeforeClass");
-
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("AfterClass");
-
 
     }
 

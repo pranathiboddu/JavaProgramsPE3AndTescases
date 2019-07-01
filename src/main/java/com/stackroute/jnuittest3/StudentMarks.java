@@ -8,16 +8,16 @@ package com.stackroute.jnuittest3;
 
 
 public class StudentMarks {
-    public String studentgrades(int numOfStudents, int stuGrades[])
+    public String studentgrades(int numOfStudents, int stuGrades[])//initialized number of students and array for storing student grades
     {
         int i;
-        if (numOfStudents < 0)
+        if (numOfStudents < 0) //students less than zero return error message
         {
             return "invalid number of students";
         }
         for (i = 0; i < numOfStudents; i++)
         {
-            if ((stuGrades[i] < 0) || (stuGrades[i] > 100))
+            if ((stuGrades[i] < 0) || (stuGrades[i] > 100))//checking if grades ara exceeding and 100 and below zero
             {
                 return "invalid grades";
             }

@@ -16,19 +16,19 @@ package com.stackroute.jnuittest3;
 public class ChessBoardPattern {
     public String chessboardpattern()
     {
-        String[][] outp=new String[8][8];
-        String output="";
+        String[][] output1=new String[8][8]; //initialized string array
+        String output=""; //took empty string
         for(int i=0;i<8;i++)
         {
             for(int j=0;j<8;j++)
             {
                 if((i+j)%2==0)
                 {
-                    outp[i][j]="WW|";
+                    output1[i][j]="WW|";
                 }
                 else
                 {
-                    outp[i][j]="BB|";
+                    output1[i][j]="BB|";
                 }
             }
         }
@@ -37,8 +37,8 @@ public class ChessBoardPattern {
         {
             for(int j=0;j<8;j++)
             {
-                System.out.print(outp[i][j]);
-                output=output+outp[i][j];
+                System.out.print(output1[i][j]);
+                output=output+output1[i][j];
             }
             System.out.println();
             output=output+"\n";

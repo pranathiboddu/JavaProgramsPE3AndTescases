@@ -12,7 +12,7 @@ public class ExceptionTypesTest {
     {
         assertEquals("Null pointer Exception", exceptionTypes.handlingMultipleCatch(null));
 
-        assertEquals("Index out of bound exception", exceptionTypes.handlingMultipleCatch("Pr@n@thi"));
+        assertEquals("Index out of bound exception", exceptionTypes.handlingMultipleCatch("Pr@na"));
 
         assertEquals("Negative Array Size Exception", exceptionTypes.handlingMultipleCatch("demo"));
 

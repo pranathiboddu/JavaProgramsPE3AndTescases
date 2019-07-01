@@ -12,15 +12,15 @@ package com.stackroute.jnuittest3;
 import static java.lang.Integer.valueOf;
 
 public class ConsecutiveNumbersCheck {
-    public String consecutivecheck(String number)
+    public String consecutivecheck(String numbers) //took string of numbers
     {
-        String[] array=number.split(",");
+        String[] array=numbers.split(","); //numbers are split by , and stored in an array
         int diff;
         boolean flag=true;
         for(int i=0;i<array.length-1;i++)
         {
-            diff = valueOf(array[i])-valueOf(array[i+1]);
-            if(Math.abs(diff)!=1)
+            diff = valueOf(array[i])-valueOf(array[i+1]); //checking difference between adjacent numbers
+            if(Math.abs(diff)!=1)//taking both negative -1 and +1 into 1 by absolute(abs).
             {
                flag=false;
                 break;
